@@ -1,0 +1,47 @@
+Việc phát triển một trò chơi là một quá trình phức tạp và đòi hỏi sự kết hợp giữa nhiều yếu tố khác nhau. 
+Dưới đây là một số bước chính trong quá trình phát triển một trò chơi:
+
+1. **Ý tưởng và Lên kế hoạch:**
+   - Xác định mục tiêu chính của trò chơi: 
+	+ thể loại : phiêu lưu
+	+ phong cách gameplay
+	+ đối tượng mục tiêu,...
+   - Xây dựng một ý tưởng sáng tạo và hấp dẫn cho trò chơi.
+	Dữ tính sẽ có 5 màn chơi , độ khó tăng dần qua các màn , người chơi vận dụng các trí thông minh để phân tích thử thách các màn 
+	các màn chơi sẽ có tối đa thời mặc định ban đầu là 100, 
+   - Lập kế hoạch chi tiết về cốt truyện, nhân vật, cấu trúc level, hệ thống điều khiển, và các yếu tố khác.
+
+2. **Thiết kế:**
+   - Tạo các bản thiết kế sơ bộ về giao diện người chơi, mô hình 3D (nếu có), hình ảnh và âm thanh.
+   - Xác định quy tắc gameplay, hệ thống kỹ năng, cơ chế chơi,...
+   - Thiết kế các màn chơi (levels) với độ khó tăng dần, đảm bảo sự thú vị và thử thách cho người chơi.
+
+3. **Phát triển:**
+   - Xây dựng mã nguồn và các thành phần cần thiết của trò chơi.
+   - Tạo các mô hình 3D, hiệu ứng hình ảnh và âm thanh, hoặc thuê người chuyên nghiệp để thực hiện nếu cần.
+   - Thử nghiệm liên tục để phát hiện và sửa lỗi, tối ưu hóa hiệu suất và cân nhắc độ cân đối của trò chơi.
+
+4. **Kiểm tra và Điều chỉnh:**
+   - Tiến hành kiểm tra nội dung và tính năng của trò chơi để đảm bảo rằng
+	chúng hoạt động như dự định và không có lỗi nghiêm trọng.
+   - Thu thập phản hồi từ các thử nghiệm, người chơi thử nghiệm và thực hiện các điều chỉnh cần thiết dựa trên phản hồi này.
+
+5. **Giai đoạn hoàn thiện:**
+   - Tối ưu hóa hiệu suất, cải thiện đồ họa và âm thanh nếu cần.
+   - Điều chỉnh cân nhắc về độ khó, cân đối gameplay và các yếu tố khác để đảm bảo trải nghiệm chơi tốt.
+
+6. **Phát hành và Tiếp thị:**
+   - Chuẩn bị cho việc phát hành trò chơi trên các nền tảng mong muốn (PC, console, di động,...).
+   - Xây dựng chiến dịch tiếp thị trò chơi, bao gồm trailer, trang web, mạng xã hội, và quảng cáo.
+   - Tối ưu hóa cách thức trò chơi xuất hiện trên các cửa hàng ứng dụng hoặc nền tảng phân phối.
+
+7. **Hỗ trợ và Cập nhật:**
+   - Đáp ứng phản hồi từ người chơi và cung cấp hỗ trợ khi gặp sự cố.
+   - Cập nhật trò chơi để bổ sung tính năng mới, sửa lỗi và cải thiện trải nghiệm người chơi.
+
+8. **Theo dõi và Đánh giá:**
+   - Theo dõi hiệu suất trò chơi sau khi phát hành bằng cách đo lường số lượng người chơi, doanh thu, thời gian chơi trung bình,...
+   - Dựa trên dữ liệu thu thập được, thực hiện các điều chỉnh và cập nhật để duy trì sự hấp dẫn của trò chơi.
+
+Quá trình phát triển trò chơi có thể thay đổi tùy theo quy mô và phức tạp của dự án, 
+nhưng những bước cơ bản này thường áp dụng cho hầu hết các trò chơi.
