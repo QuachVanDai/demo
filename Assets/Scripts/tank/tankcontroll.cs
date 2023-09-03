@@ -12,6 +12,7 @@ public class tankcontroll : MonoBehaviour
     public LayerMask layerMask;
     RaycastHit2D[] hits;
     public Transform tranForm_enemy;
+    [Header("n = (1, 2, 3)")]
     public int n = 1;
     void Start()
     {

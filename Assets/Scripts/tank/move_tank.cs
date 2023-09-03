@@ -11,6 +11,7 @@ public class move_tank : MonoBehaviour
     public Rigidbody2D rb;
 
     private Vector3 targetPosition;
+    [Header("n = (1, 2, 3)")]
     public int n = 0;
     void Start()
     {

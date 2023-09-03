@@ -8,6 +8,7 @@ public class colorchange : MonoBehaviour
     public Color targetColor2 = Color.red;
     public Color changeColor;
     Color targetColor1;
+    [Header("n = (1, 2, 3)")]
     public int n = 1;
     private float  get_time;
     // Start is called before the first frame update
