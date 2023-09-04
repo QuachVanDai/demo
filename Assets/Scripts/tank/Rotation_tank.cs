@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using DG.Tweening;
-public class tankcontroll : MonoBehaviour
+public class Rotation_tank : MonoBehaviour
 {
     // Start is called before the first frame update
     private Transform target;
@@ -11,7 +11,7 @@ public class tankcontroll : MonoBehaviour
     public float maxDistance = 10.0f;
     public LayerMask layerMask;
     RaycastHit2D[] hits;
-    public Transform tranForm_enemy;
+    public Transform tranform_enemy;
     [Header("n = (1, 2, 3)")]
     public int n = 1;
     void Start()
@@ -59,7 +59,7 @@ public class tankcontroll : MonoBehaviour
     void random_vitri()
     {
         Vector2 enemyPosition = new Vector2(UnityEngine.Random.Range(-9, 9), UnityEngine.Random.Range(-4, 4));
-        tranForm_enemy.position = enemyPosition;
+        tranform_enemy.position = enemyPosition;
     }
     public void xoay_1()
     {

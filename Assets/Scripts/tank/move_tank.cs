@@ -26,16 +26,13 @@ public class move_tank : MonoBehaviour
             // Lấy tọa độ chuột trong không gian thế giới
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition.z = 0;
+   
         }
-    }
+    
+          float angle = Mathf.Atan2(targetPosition.y - transform.localPosition.y, targetPosition.x - transform.position.x) * Mathf.Rad2Deg - 90;
+            gameObject.transform.DORotate(new Vector3(0, 0, angle), 1f);
 
-    void FixedUpdate()
-    {
-      
-        float angle = Mathf.Atan2(targetPosition.y - transform.localPosition.y, targetPosition.x - transform.localPosition.x) * Mathf.Rad2Deg -90;
-        gameObject.transform.DORotate(new Vector3(0, 0, angle), 1f);
-        
-      if(n==1)
+        if (n == 1)
         {
             cach1();
         }
@@ -47,18 +44,23 @@ public class move_tank : MonoBehaviour
         {
             cach3();
         }
+
     }
-    public void cach3()
+    public void cach1()
     {
 
         transform.position = targetPosition ;
     }
     private void cach2()
     {
-        Vector2 direction = (targetPosition - transform.localPosition).normalized;
+        Vector2 direction = (targetPosition - transform.position).normalized;
         rb.velocity = direction * maxSpeed;
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
-    public void cach1()
+    public void cach3()
     {
         transform.DOMove(targetPosition, 2);
 
