@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class combination : MonoBehaviour
+public class Sequences : MonoBehaviour
 {
     public Transform myTransform;
     public Color targetColor;
@@ -11,10 +12,11 @@ public class combination : MonoBehaviour
     public int numLoop;
     public Vector3 newTarget;
     public Vector3 newScale;
+    public GameObject panel_;
     // Start is called before the first frame update
     void Start()
     {
-        myCombination();
+        mySequences();
 
     }
 
@@ -22,7 +24,7 @@ public class combination : MonoBehaviour
     void Update()
     {
     }
-    private void myCombination()
+    private void mySequences()
     {
         // Tạo một Sequence mới
         Sequence mySequence = DOTween.Sequence();
@@ -37,16 +39,21 @@ public class combination : MonoBehaviour
             mySequence.Append(mySprite.DOColor(targetColor, 0.5f));
 
         }
-        /*       mySequence.OnComplete(() =>
+             mySequence.OnComplete(() =>
                {
-                   panel_.SetActive(true);
-                   Debug.Log("Tween đã hoàn thành!");
+                   StartCoroutine(myComplete());
                    // Thực hiện các hành động sau khi tween hoàn thành ở đây
-               });*/
+               });
         // Đặt số lần lặp và chạy Sequence
         mySequence.SetLoops(numLoop); // Lặp lại Sequence 2 lần
         mySequence.SetAutoKill(false); // Không tự động hủy sau khi hoàn thành
         mySequence.Play(); // Bắt đầu chạy Sequence
     }
 
+    IEnumerator myComplete()
+    {
+        panel_.SetActive(true);
+        yield return new WaitForSeconds(5);
+        panel_.SetActive(false);
+    }
 }
